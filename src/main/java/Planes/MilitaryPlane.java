@@ -19,7 +19,10 @@ public class MilitaryPlane extends Plane{
 
     @Override
     public String toString() {
-        return super.toString().replace("}",", type=" + type + '}');
+        return "MilitaryPlane{" +
+                "model=" + model +
+                ", maxFlightDistance=" + getMaxFlightDistance() + '\'' +
+                '}';
     }
 
     @Override

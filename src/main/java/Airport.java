@@ -75,7 +75,7 @@ public class Airport {
     }
 
     public Airport sortByMaxDistance() {
-        planes.sort(comparingInt(Plane::GetMaxFlightDistance));
+        planes.sort(comparingInt(Plane::getMaxFlightDistance));
         return this;
     }
 
@@ -85,7 +85,7 @@ public class Airport {
     }
 
     public void sortByMaxLoadCapacity() {
-        planes.sort(comparingInt(Plane::getMinLoadCapacity));
+        planes.sort(comparingInt(Plane::getMaxLoadCapacity));
     }
 
     public List<? extends Plane> getPlanes() {
